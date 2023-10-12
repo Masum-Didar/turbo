@@ -1,9 +1,6 @@
 <p id="notice"><%= notice %></p>
+<%= turbo_stream_from @form %>
 <%= turbo_frame_tag 'room' do %>
-<!--  <p>-->
-<!--    <strong>Name:</strong>-->
-    <%#=@room.name %>
-<!--  </p>-->
   <%= render @room %>
   <div>
     <%= link_to "Edit this room", edit_room_path(@room) %> |
